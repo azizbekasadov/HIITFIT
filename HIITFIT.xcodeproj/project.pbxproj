@@ -14,6 +14,7 @@
 		5DB5486629AA31B90088A9B2 /* HIITFITTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5486529AA31B90088A9B2 /* HIITFITTests.swift */; };
 		5DB5487029AA31B90088A9B2 /* HIITFITUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5486F29AA31B90088A9B2 /* HIITFITUITests.swift */; };
 		5DB5487229AA31B90088A9B2 /* HIITFITUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5487129AA31B90088A9B2 /* HIITFITUITestsLaunchTests.swift */; };
+		5DB5488429AA32760088A9B2 /* HIITFITTestsImport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB5488329AA32760088A9B2 /* HIITFITTestsImport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		5DB5486B29AA31B90088A9B2 /* HIITFITUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HIITFITUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB5486F29AA31B90088A9B2 /* HIITFITUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFITUITests.swift; sourceTree = "<group>"; };
 		5DB5487129AA31B90088A9B2 /* HIITFITUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFITUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DB5488329AA32760088A9B2 /* HIITFITTestsImport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFITTestsImport.swift; sourceTree = "<group>"; };
+		5DB5488529AA32EE0088A9B2 /* Keyboard Shortcuts.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Keyboard Shortcuts.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +97,11 @@
 		5DB5485329AA31B70088A9B2 /* HIITFIT */ = {
 			isa = PBXGroup;
 			children = (
-				5DB5485429AA31B70088A9B2 /* HIITFITApp.swift */,
-				5DB5485629AA31B70088A9B2 /* ContentView.swift */,
-				5DB5485829AA31B90088A9B2 /* Assets.xcassets */,
+				5DB5488229AA31EF0088A9B2 /* PresentationLayer */,
+				5DB5488129AA31E80088A9B2 /* AppLayer */,
+				5DB5488029AA31E20088A9B2 /* Resources */,
 				5DB5485A29AA31B90088A9B2 /* Preview Content */,
+				5DB5488529AA32EE0088A9B2 /* Keyboard Shortcuts.md */,
 			);
 			path = HIITFIT;
 			sourceTree = "<group>";
@@ -113,6 +117,8 @@
 		5DB5486429AA31B90088A9B2 /* HIITFITTests */ = {
 			isa = PBXGroup;
 			children = (
+				5DB5487F29AA31DD0088A9B2 /* Extensions */,
+				5DB5487E29AA31D80088A9B2 /* Helpers */,
 				5DB5486529AA31B90088A9B2 /* HIITFITTests.swift */,
 			);
 			path = HIITFITTests;
@@ -123,8 +129,47 @@
 			children = (
 				5DB5486F29AA31B90088A9B2 /* HIITFITUITests.swift */,
 				5DB5487129AA31B90088A9B2 /* HIITFITUITestsLaunchTests.swift */,
+				5DB5488329AA32760088A9B2 /* HIITFITTestsImport.swift */,
 			);
 			path = HIITFITUITests;
+			sourceTree = "<group>";
+		};
+		5DB5487E29AA31D80088A9B2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5DB5487F29AA31DD0088A9B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5DB5488029AA31E20088A9B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DB5485829AA31B90088A9B2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5DB5488129AA31E80088A9B2 /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5DB5485429AA31B70088A9B2 /* HIITFITApp.swift */,
+			);
+			path = AppLayer;
+			sourceTree = "<group>";
+		};
+		5DB5488229AA31EF0088A9B2 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5DB5485629AA31B70088A9B2 /* ContentView.swift */,
+			);
+			path = PresentationLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB5488429AA32760088A9B2 /* HIITFITTestsImport.swift in Sources */,
 				5DB5487229AA31B90088A9B2 /* HIITFITUITestsLaunchTests.swift in Sources */,
 				5DB5487029AA31B90088A9B2 /* HIITFITUITests.swift in Sources */,
 			);
